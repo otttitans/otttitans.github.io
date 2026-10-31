@@ -102,10 +102,10 @@
   .hero h1 { font-family:'Anton',sans-serif; font-size:clamp(29px, 8.4vw, 42px); line-height:1.1; text-transform:uppercase; margin:4px 0 8px; }
   .hero h1 .lime { color:#C6F432; }
   .hero p { color:#B9C3D6; font-size:14.5px; line-height:1.55; }
-  .fan { position:relative; height:186px; margin:14px auto 2px; max-width:320px; }
-  .fan img { position:absolute; top:0; width:128px; border-radius:8px; box-shadow:0 12px 30px rgba(0,0,0,.55); }
-  .fan .f1 { left:50%; transform:translateX(-92%) rotate(-7deg); }
-  .fan .f2 { left:50%; transform:translateX(-8%) rotate(6deg); }
+  .fan { margin:14px auto 2px; text-align:center; }
+  .fan img { width:170px; border-radius:8px; box-shadow:0 12px 30px rgba(0,0,0,.55); }
+  
+  
   .stats { display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin:10px 0 2px; }
   .stats span { border:1px solid #5BD6E8; color:#5BD6E8; border-radius:999px; padding:5px 11px; font-size:12px; font-weight:bold; letter-spacing:.5px; }
   .riddle { background:#101a30; border:1px solid #C6F432; border-radius:14px; padding:18px 16px; margin:18px 0; text-align:center; }
@@ -187,12 +187,11 @@
     <div class="hero">
       <h1>Solve the case in <span class="lime">60 seconds</span></h1>
       <p>Illustrated riddle books you read free on your phone. One case. One trap. Can you crack it before the reveal?</p>
-      <div class="fan"><img class="f1" src="cover-p001.jpg" alt="Project 001 cover"><img class="f2" src="pages/page-03.jpg" alt="Inside the book"></div>
+      <div class="fan"><img src="cover-p001.jpg" alt="Project 001 cover"></div>
       <div class="stats"><span>22 PAGES</span><span>14 CLIPS</span><span>EVERY PROMPT INCLUDED</span></div>
     </div>
 
     <!-- AD SLOT: TOP BANNER — rotating house ads play here; Monetag code can replace them -->
-    <div class="adbox adslot"></div>
 
 
     <div class="riddle">
@@ -229,11 +228,117 @@
       <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-p003.html">⬇ DOWNLOAD FREE</a>
     </div>
 
-    <div class="offer" style="margin-top:26px;">
-      <h3>The Riddle Vault — 100 One-Riddle Books</h3>
-      <p>Batch 1 is live: 10 complete cases — the wolves and the sheep, the missing dollar, the ice-water date and more. One riddle per book, three hints, one verified answer. All free.</p>
-      <a class="btn" href="vault.html">OPEN THE VAULT →</a>
+    <div class="book">
+      <img class="cover" src="cover-p002.jpg" alt="Project 002 — The Backwards Clock cover">
+      <span class="chip free">COMING SOON</span>
+      <h3>Project 002<br>The Backwards Clock</h3>
+      <p>Why does the barber's clock run the wrong way? The next full pack — in production now.</p>
+      <div class="meta"><span>LOGIC PUZZLE</span><span>BARBER SHOP</span><span>IN PRODUCTION</span></div>
     </div>
+
+    <h3 style="grid-column:1/-1; font-family:'Anton',sans-serif; font-size:24px; margin:14px 0 0;">THE RIDDLE VAULT — <span style="color:#C6F432;">BATCH 1</span></h3>
+    <p style="grid-column:1/-1; color:#9FB0C9; margin:0;">Ten one-riddle books. One case, three hints, one verified answer each — all free, right here.</p>
+
+    <div class="book">
+      <img class="cover" src="cover-rv01.jpg" alt="100 Wolves, One Sheep — book cover">
+      <a class="btn readnow" href="read-rv01.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 01<br>100 Wolves, One Sheep</h3>
+      <p>Does the Sheep Survive? One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv01.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv02.jpg" alt="Two Fathers, Two Sons — book cover">
+      <a class="btn readnow" href="read-rv02.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 02<br>Two Fathers, Two Sons</h3>
+      <p>Why Only Three Plates? One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv02.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv03.jpg" alt="Twelve Coins, One Fake — book cover">
+      <a class="btn readnow" href="read-rv03.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 03<br>Twelve Coins, One Fake</h3>
+      <p>Find It in Three Weighings One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv03.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv04.jpg" alt="The Friday Question — book cover">
+      <a class="btn readnow" href="read-rv04.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 04<br>The Friday Question</h3>
+      <p>What Was Yesterday? One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv04.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv05.jpg" alt="The Missing Dollar — book cover">
+      <a class="btn readnow" href="read-rv05.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 05<br>The Missing Dollar</h3>
+      <p>Where Did It Go? One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv05.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv06.jpg" alt="Six Eggs — book cover">
+      <a class="btn readnow" href="read-rv06.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 06<br>Six Eggs</h3>
+      <p>How Are Four Left? One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv06.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv07.jpg" alt="Same Moment, Two Birthdays — book cover">
+      <a class="btn readnow" href="read-rv07.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 07<br>Same Moment, Two Birthdays</h3>
+      <p>Born at the Same Instant — How? One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv07.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv08.jpg" alt="The Sum Everyone Gets Wrong — book cover">
+      <a class="btn readnow" href="read-rv08.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 08<br>The Sum Everyone Gets Wrong</h3>
+      <p>1000 + 40 + 1000 + 30 + … One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv08.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv09.jpg" alt="What Has Four Letters? — book cover">
+      <a class="btn readnow" href="read-rv09.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 09<br>What Has Four Letters?</h3>
+      <p>Sometimes Nine. Never Five. One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv09.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
+    <div class="book">
+      <img class="cover" src="cover-rv10.jpg" alt="The Ice-Water Date — book cover">
+      <a class="btn readnow" href="read-rv10.html">READ NOW</a>
+      <span class="chip free">READ FREE — FULL BOOK</span>
+      <h3>Case 10<br>The Ice-Water Date</h3>
+      <p>Why Did Only He Die? One riddle, three hints, one verified answer — 8 pages, free.</p>
+      <div class="meta"><span>ONE RIDDLE</span><span>8 PAGES</span><span>AGENT + FLOW READY</span></div>
+      <a class="btn" style="background:#16223c;color:#5BD6E8;border:1px solid #5BD6E8;margin-top:8px;" href="download-rv10.html">⬇ DOWNLOAD FREE</a>
+    </div>
+
 
     <h2 class="section">Look <span class="lime">Inside</span></h2>
     <div class="spread">
@@ -313,7 +418,6 @@
     </div>
 
     <!-- AD SLOT: BOTTOM BANNER — rotating house ads play here; Monetag code can replace them -->
-    <div class="adbox adslot"></div>
 
     <div class="foot">© 2026 OTT TITANS — ALL RIGHTS OWNED BY OTT TITANS<br>ebook.otttitans.mooo.com</div>
   </div>
