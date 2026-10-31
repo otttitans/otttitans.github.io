@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <script>(function(s){s.dataset.zone='12162132',s.src='https://n6wxm.com/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+<script>(function(s){s.dataset.zone='12162117',s.src='https://nap5k.com/tag.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>OTT Titans — Download Six Eggs Free</title>
@@ -43,11 +44,11 @@
   <div class="brand">OTT <span>TITANS</span></div>
   <img class="cover" src="cover-rv06.jpg" alt="Six Eggs cover">
   <h1>Riddle Vault Case 06 — Six Eggs</h1>
-  <p class="sub">The full mini-book: all 8 pages — the case, three hints, the reveal, and why it works. Free PDF download.</p>
+  <p class="sub">The full mini-book: all 25 pages — the case, three hints, the reveal, and why it works. Free PDF download.</p>
 
   <div class="vidbox">
     <div class="k">WHILE YOU WAIT — THE LATEST CASE</div>
-    <div class="vwrap"><iframe src="https://www.youtube.com/embed/videoseries?list=UUrv9EPLj5ZGIyhGX2wjmALQ&autoplay=1&mute=1&playsinline=1&rel=0" title="Latest video from 1 Minute Detective on YouTube" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe></div>
+    <div class="vwrap"><iframe id="ytplayer" title="Videos from the channel" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
     <div class="t">From our YouTube channel @oneminutedetective1 — a new riddle every day. This player always starts with the newest video.</div>
   </div>
 
@@ -77,6 +78,14 @@
       fillEl.style.width = ((60 - left) / 60 * 100) + '%';
     }
   }, 1000);
+</script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script>
+var ytPlayer;
+function onYouTubeIframeAPIReady(){
+  ytPlayer = new YT.Player('ytplayer', { playerVars: { listType:'playlist', list:'UUrv9EPLj5ZGIyhGX2wjmALQ', autoplay:1, mute:1, playsinline:1, rel:0, loop:1 },
+    events: { onReady: function(e){ e.target.mute(); e.target.setShuffle(true); e.target.setLoop(true); e.target.playVideo(); } } });
+}
 </script>
 </body>
 </html>
