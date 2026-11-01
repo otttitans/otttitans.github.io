@@ -48,8 +48,8 @@
 
   <div class="vidbox">
     <div class="k">WHILE YOU WAIT — THE LATEST CASE</div>
-    <div class="vwrap"><iframe id="ytplayer" title="Videos from the channel" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
-    <div class="t">From our YouTube channel @oneminutedetective1 — a new riddle every day. This player always starts with the newest video.</div>
+    <div class="vwrap"><iframe id="ytplayer" data-player-fixed="1" src="https://www.youtube.com/embed/n_2jCs5_BAI?autoplay=1&mute=1&playsinline=1&rel=0&playlist=n_2jCs5_BAI,GEqJij2qjFs,l0csglTsNBY,4UxPgzAcgQE,ouz-4NHR4GI,aSYXzgwrzaI,YkgJGMDTAE4,wtTipZnF_mc" title="Videos from the channel" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    <div class="t">From our YouTube channel @oneminutedetective1 — a new riddle every day. A different case starts on every visit — when one ends, the next plays automatically.</div>
   </div>
 
   <p class="wait">Ads keep this book free. Please keep this page open — your download unlocks in:</p>
@@ -79,13 +79,17 @@
     }
   }, 1000);
 </script>
-<script src="https://www.youtube.com/iframe_api"></script>
 <script>
-var ytPlayer;
-function onYouTubeIframeAPIReady(){
-  ytPlayer = new YT.Player('ytplayer', { playerVars: { listType:'playlist', list:'UUrv9EPLj5ZGIyhGX2wjmALQ', autoplay:1, mute:1, playsinline:1, rel:0, loop:1 },
-    events: { onReady: function(e){ e.target.mute(); e.target.setShuffle(true); e.target.setLoop(true); e.target.playVideo(); } } });
-}
+(function(){
+  var ids = ["n_2jCs5_BAI","GEqJij2qjFs","l0csglTsNBY","4UxPgzAcgQE","ouz-4NHR4GI","aSYXzgwrzaI","YkgJGMDTAE4","wtTipZnF_mc"];
+  for (var i = ids.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = ids[i]; ids[i] = ids[j]; ids[j] = t;
+  }
+  var f = document.getElementById('ytplayer');
+  if (f) f.src = 'https://www.youtube.com/embed/' + ids[0] +
+    '?autoplay=1&mute=1&playsinline=1&rel=0&playlist=' + ids.join(',');
+})();
 </script>
 </body>
 </html>
